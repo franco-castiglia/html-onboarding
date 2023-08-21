@@ -1,13 +1,34 @@
-.centrado {
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Nunito:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+}
+
+.centered {
   display: flex;
   justify-content: center;
 }
-.centrado-img {
+
+.justify {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.justify-text {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.centered-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 30%;
   padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .section1 {
@@ -63,29 +84,28 @@ h2 {
 h3 {
   font-size: 62px;
   line-height: 1.34;
-  margin: 24px 432px 0;
+  margin: 50px 0 0;
 }
 
 h4 {
   font-size: 42px;
   line-height: 1.21;
-  margin: 0 361px 0;
   padding-bottom: 70px;
 }
 
-h5.segundo {
-  font-size: 42px;
+h5.second {
+  font-size: 38px;
   margin-left: 48px;
 }
 
-h5.primero {
-  font-size: 48px;
+h5.first {
+  font-size: 44px;
   margin-left: 48px;
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 h6 {
-  font-size: 60px;
+  font-size: 56px;
   margin-left: 48px;
 }
 
@@ -96,29 +116,25 @@ h6 {
   padding-top: 50px;
 }
 
-.leer-mas {
-  background-color: #5853bc;
-  width: 300px;
-  height: 41px;
-  margin-left: 48px;
-  border-radius: 50px;
-}
-
 p {
-  font-size: 32px;
+  font-size: 26px;
   line-height: 1.34;
   margin: 6px 0 24px;
 }
 
-p.mediano {
-  font-size: 27px;
+p.small {
+  font-size: 22px;
   line-height: 1.37;
-  margin: 35px 174px 35px 48px;
+  margin: 35px 100px 15px 48px;
 }
 
-p.chico {
-  font-size: 21px;
-  line-height: 1.33;
-  margin-left: 110px;
-  padding-top: 6px;
+.button1 {
+  background-color: #5853bc;
+  border-radius: 30px;
+  padding: 6px 100px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-left: 48px;
 }
+

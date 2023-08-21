@@ -1,13 +1,34 @@
-.centrado {
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Nunito:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+}
+
+.centered {
   display: flex;
   justify-content: center;
 }
-.centrado-img {
+
+.justify {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.justify-text {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.centered-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 30%;
   padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .section1 {
@@ -21,51 +42,68 @@
 }
 
 h2 {
-  font: bold 60px/1.2 Bitter;
+  font-family: Bitter;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 1.2;
   color: #ffffff;
   margin: 0 70px 6px;
   padding-top: 70px;
 }
 
 h3 {
-  font: bold 62px/1.34 Bitter;
+  font-family: Bitter;
+  font-weight: bold;
+  font-size: 62px;
+  line-height: 1.34;
   color: #fcae00;
-  margin: 24px 432px 0;
+  margin: 50px 0 0;
 }
 
-p.blanco {
-  font: 32px/1.34 Nunito;
+p.white {
+  font-family: Nunito;
+  font-size: 26px;
+  line-height: 1.34;
   color: #ffffff;
-  margin: 6px 0 24px;
+  margin: 0 0 0;
 }
 
 h4 {
-  font: bold 42px/1.21 Bitter;
+  font-family: Bitter;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.21;
   color: #fcae00;
-  margin: 0 361px 0;
+  margin: 0 0 0;
   padding-bottom: 70px;
 }
 
-h5.segundo {
-  font: bold 42px Bitter;
+h5.second {
+  font-family: Bitter;
+  font-weight: bold;
+  font-size: 38px;
   color: #fcae00;
   margin-left: 48px;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-h5.primero {
-  font: bold 48px Bitter;
+h5.first {
+  font-family: Bitter;
+  font-weight: bold;
+  font-size: 44px;
   color: #fcae00;
   margin-left: 48px;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 h6 {
+  font-family: Bitter;
+  font-weight: bold;
+  font-size: 56px;
   color: #5853bc;
-  font: bold 60px Bitter;
   margin-left: 48px;
   margin-top: 0;
   margin-bottom: 0;
@@ -78,23 +116,22 @@ h6 {
   padding-top: 50px;
 }
 
-p.gris {
-  font: 27px/1.37 Nunito;
+p.grey {
+  font-family: Nunito;
+  font-size: 22px;
+  line-height: 1.37;
   color: #707070;
-  margin: 35px 174px 35px 48px;
+  margin: 35px 100px 15px 48px;
 }
 
-.leer-mas {
+.button1 {
   background-color: #5853bc;
-  width: 300px;
-  height: 41px;
+  border-radius: 30px;
+  color: white;
+  padding: 6px 100px;
+  text-align: center;
+  font-family: Nunito;
+  font-size: 16px;
+  margin-top: 30px;
   margin-left: 48px;
-  border-radius: 50px;
-}
-
-p.blanco-chico {
-  font: bold 21px/1.33 Nunito;
-  color: #ffffff;
-  margin-left: 110px;
-  padding-top: 6px;
 }
