@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Nunito:wght@400;600;700;800;900&display=swap");
 
-
 $white: #ffffff;
 $yellow: #fcae00;
 $purple: #5853bc;
@@ -11,49 +10,48 @@ $text-font: Nunito;
 
 @mixin local {
   display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 300px;
-      height: 375px;
-      border-radius: 10px;
-      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-      border: solid 1px #d2d2d2;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 375px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  border: solid 1px #d2d2d2;
 
-      .logos {
-        width: 133px;
-        height: 133px;
-        padding: 30px 0 20px;
-      }
+  .logos {
+    width: 133px;
+    height: 133px;
+    padding: 30px 0 20px;
+  }
 
-      .local-subtitle {
-        color: $grey;
-        font-family: $text-font;
-        font-size: 21px;
-        font-weight: bold;
-        margin: 0;
-      }
+  .local-subtitle {
+    color: $grey;
+    font-family: $text-font;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 0;
+  }
 
-      .local-address {
-        color: $grey;
-        font-family: $text-font;
-        font-size: 16px;
-        font-weight: bold;
-        margin: 0;
-        padding: 5px 0 40px;
-      }
+  .local-address {
+    color: $grey;
+    font-family: $text-font;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px 0 40px;
+  }
 
-      .local-button {
-        width: 206px;
-        height: 51px;
-        border-radius: 50px;
-        border: none;
-        background-color: $yellow;
-        font-family: $text-font;
-        font-size: 21px;
-        font-weight: bold;
-        color: $white;
-      }
-
+  .local-button {
+    width: 206px;
+    height: 51px;
+    border-radius: 50px;
+    border: none;
+    background-color: $yellow;
+    font-family: $text-font;
+    font-size: 21px;
+    font-weight: bold;
+    color: $white;
+  }
 }
 
 @mixin titles {
@@ -93,7 +91,7 @@ body {
 }
 
 .centered-text {
- text-align: center;
+  text-align: center;
 }
 
 .justify {
@@ -216,7 +214,9 @@ body {
 .section3 {
   margin-top: 50px;
   background-color: #f0f0f0;
-  .title { @include titles }
+  .title {
+    @include titles;
+  }
 
   .text {
     @include texts;
@@ -226,19 +226,23 @@ body {
     }
   }
 
-  .text-bold { @include texts-bold}
+  .text-bold {
+    @include texts-bold;
+  }
 }
 
 .section4 {
-  .title { @include titles }
+  .title {
+    @include titles;
+  }
 
   .text {
-     @include texts;
+    @include texts;
   }
 
   .text-bold {
     padding-top: 30px;
-    @include texts-bold
+    @include texts-bold;
   }
   .boxes4 {
     display: flex;
@@ -288,7 +292,9 @@ body {
 .section5 {
   margin-top: 50px;
   background-color: #f0f0f0;
-  .title { @include titles }
+  .title {
+    @include titles;
+  }
 
   .boxes5 {
     display: flex;
@@ -357,7 +363,7 @@ body {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     border: solid 1px #d2d2d2;
 
-    .box-title{
+    .box-title {
       font-size: 48px;
       font-weight: 900;
       color: $yellow;
@@ -369,7 +375,7 @@ body {
       }
     }
 
-    .box-subtitle{
+    .box-subtitle {
       font-size: 42px;
       font-weight: bold;
       color: $skyblue;
@@ -404,6 +410,7 @@ body {
   }
 
   select {
+    appearance: none;
     margin-top: 10px;
     color: $grey;
     font-family: $text-font;
@@ -412,18 +419,18 @@ body {
     height: 50px;
     border-radius: 50px;
     border: solid 1px #d2d2d2;
-    background-color: #fff;
     text-indent: 20px;
-
   }
 
-  .custom:after {
-    position: absolute;
-    content: "";
-    top: 14px;
-    right: 10px;
-    width: 0;
-    height: 0;
+  .custom {
+    position: relative;
+
+    & img {
+      position: absolute;
+      right: 15px;
+      top: 23px;
+      width: 25px;
+    }
   }
 
   .locals {
@@ -432,7 +439,9 @@ body {
     padding: 40px 50px 0;
     width: 1330px;
 
-    .local { @include local }
+    .local {
+      @include local;
+    }
   }
 
   .locals2 {
@@ -441,14 +450,18 @@ body {
     padding: 40px 50px 0;
     width: 1330px;
 
-    .local { @include local }
+    .local {
+      @include local;
+    }
   }
 }
 
 .section7 {
   margin-top: 50px;
   background-color: #f0f0f0;
-  .title { @include titles }
+  .title {
+    @include titles;
+  }
 
   .boxes7 {
     display: flex;
