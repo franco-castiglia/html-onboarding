@@ -116,6 +116,7 @@ body {
   margin: 30px 0 0 48px;
   padding: 6px 100px;
   text-align: center;
+  border: none;
 }
 
 .section3 {
@@ -348,10 +349,19 @@ body {
   background-color: #fff;
   text-indent: 20px;
 }
+.section6 .custom:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+}
 .section6 .locals {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 40px 50px 0;
+  width: 1330px;
 }
 .section6 .locals .local {
   display: flex;
@@ -362,6 +372,84 @@ body {
   border-radius: 10px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   border: solid 1px #d2d2d2;
+}
+.section6 .locals .local .logos {
+  width: 133px;
+  height: 133px;
+  padding: 30px 0 20px;
+}
+.section6 .locals .local .local-subtitle {
+  color: #707070;
+  font-family: Nunito;
+  font-size: 21px;
+  font-weight: bold;
+  margin: 0;
+}
+.section6 .locals .local .local-address {
+  color: #707070;
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px 0 40px;
+}
+.section6 .locals .local .local-button {
+  width: 206px;
+  height: 51px;
+  border-radius: 50px;
+  border: none;
+  background-color: #fcae00;
+  font-family: Nunito;
+  font-size: 21px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.section6 .locals2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 50px 0;
+  width: 1330px;
+}
+.section6 .locals2 .local {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 375px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  border: solid 1px #d2d2d2;
+}
+.section6 .locals2 .local .logos {
+  width: 133px;
+  height: 133px;
+  padding: 30px 0 20px;
+}
+.section6 .locals2 .local .local-subtitle {
+  color: #707070;
+  font-family: Nunito;
+  font-size: 21px;
+  font-weight: bold;
+  margin: 0;
+}
+.section6 .locals2 .local .local-address {
+  color: #707070;
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px 0 40px;
+}
+.section6 .locals2 .local .local-button {
+  width: 206px;
+  height: 51px;
+  border-radius: 50px;
+  border: none;
+  background-color: #fcae00;
+  font-family: Nunito;
+  font-size: 21px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .section7 {
