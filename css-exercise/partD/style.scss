@@ -8,7 +8,7 @@ $skyblue: #11afaf;
 $subtitle-font: Bitter;
 $text-font: Nunito;
 
-@mixin local {
+@mixin localB {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,7 +68,6 @@ $text-font: Nunito;
   font-family: $text-font;
   font-size: 27px;
   text-align: center;
-  margin: 20px 80px 0;
 }
 
 @mixin texts-bold {
@@ -112,6 +111,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  margin-left: 20px;
 }
 
 .justify-text {
@@ -180,25 +180,28 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: 20px auto;
 
   h5.second {
     color: $yellow;
-    font-size: 38px;
+    font-size: 34px;
+    margin: 0;
   }
 
   h5.first {
     color: $yellow;
-    font-size: 44px;
+    font-size: 39px;
     margin: 0;
   }
 
   h6 {
     color: $purple;
-    font-size: 56px;
+    font-size: 50px;
     margin: 0;
   }
 
-  .image1 {
+  .image1-phone {
+    display: none;
   }
 
   p.grey {
@@ -267,8 +270,8 @@ body {
       border-radius: 10px;
       box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
       border: solid 1px #665eff;
-      width: 615px;
-      height: 274px;
+      width: 45%;
+      height: 305px;
 
       .box4-title {
         color: $yellow;
@@ -324,7 +327,7 @@ body {
       box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
       border: solid 1px #d2d2d2;
       background-color: #fff;
-      width: 400px;
+      width: 30%;
       height: 269px;
       margin-bottom: 50px;
 
@@ -359,12 +362,13 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: $text-font;
+  padding: 12px 0;
 
   @extend .width-100;
 
   .title {
     @include titles;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
   }
 
   .box6 {
@@ -454,7 +458,10 @@ body {
     width: 1330px;
 
     .local {
-      @include local;
+
+      .localB {
+        @include localB;
+      }
     }
   }
 
@@ -464,8 +471,8 @@ body {
     padding: 40px 50px 0;
     width: 1330px;
 
-    .local {
-      @include local;
+    .localB {
+      @include localB;
     }
   }
 }
@@ -533,35 +540,46 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+
+  .centered-img {
+    width: 50%;
+    padding: 15px 0;
+  }
+
   .section1 {
-    // padding-left: 25px;
-    // padding-right: 25px;
 
     h2 {
       font-size: 24px;
     }
     p.white {
-      font-size: 16px;
+      font-size: 14px;
+      padding: 5px 0 10px;
     }
     h3 {
-      font-size: 30px;
+      font-size: 23px;
     }
     h4 {
       font-size: 21px;
     }
   }
   .section2 {
-    padding: 0 25px;
     flex-direction: column;
 
-    .image1 {
-      width: 90%;
+    .image1 { display: none; }
+
+    .image1-phone {
+      display: block;
+      padding: 20px 0;
+      width: 100%;
       height: 90%;
-      padding: 0 25px 30px;
+    }
+
+    .justify {
+      margin: 0;
     }
 
     h5.first {
-      font-size: 23px;
+      font-size: 21px;
       text-align: center;
       margin: 0;
     }
@@ -579,11 +597,11 @@ body {
       font-size: 16px;
       text-align: center;
       margin: 0;
+      padding-bottom: 12px;
     }
 
     .button1 {
-      font-size: 12px;
-      margin: 0;
+      display: none;
     }
   }
 
@@ -593,10 +611,10 @@ body {
     }
     .text {
       font-size: 16px;
-      margin: 0;
     }
     .text-bold {
       font-size: 16px;
+      padding: 0;
     }
   }
 
@@ -614,7 +632,7 @@ body {
       flex-direction: column;
 
       .box5 {
-        width: 100%;
+        width: 120%;
         margin-bottom: 50px;
 
         .circle {
@@ -625,10 +643,138 @@ body {
 
         .box-subtitle {
           font-size: 20px;
-          padding: 0 20px 0;
+          padding: 0 10px 0;
           margin: 0;
         }
       }
+    }
+  }
+
+  .section6 {
+    .title { font-size: 21px; }
+
+    .box6 {
+      width: 80%;
+      height: auto;
+      padding: 0 10px;
+
+      .box-title {
+        font-size: 26px;
+
+        .color2 {
+          display: none;
+        }
+      }
+
+      .box-subtitle {
+        font-size: 21px;
+        text-align: center;
+        padding-bottom: 15px;
+      }
+
+      button {
+        width: 60%;
+        height: auto;
+        background-color: $purple;
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: bold;
+        color: $white;
+        margin-bottom: 20px;
+      }
+    }
+
+    .subtitle {
+      font-size: 21px;
+    }
+
+    .text {
+      font-size: 16px;
+    }
+
+    select {
+      appearance: none;
+      font-size: 16px;
+      width: 250px;
+      height: 30px;
+    }
+
+    .custom {
+      & img {
+        top: 11px;
+      }
+    }
+
+    .locals {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      width: 100%;
+      height: 120%;
+
+      .local {
+
+        .localB {
+          width: 80%;
+          height: 10%;
+          margin-top: 30px;
+
+          .logos {
+            width: 22%;
+            height: 22%;
+            padding: 30px 0 20px;
+          }
+
+          .local-subtitle {
+            font-size: 18px;
+          }
+
+          .local-address {
+            padding: 5px 0 10px;
+          }
+
+          .local-button {
+            width: 40%;
+            height: 10%;
+            font-size: 16px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+
+    .locals2 {
+      display: none;
+    }
+  }
+
+  .section7 {
+
+    @extend .width-100;
+    .title { font-size: 21px; }
+
+    .boxes7 {
+      padding: 25px 10px 50px;
+
+      .box7 {
+        width: 29%;
+        height: 22%;
+
+        .support {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .section8 {
+
+    .text { font-size: 14px; }
+
+    .photo8 {
+      width: 42%;
+      height: 100%;
     }
   }
 }
