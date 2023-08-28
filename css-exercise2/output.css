@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Nunito:wght@400;600;700;800;900&display=swap");
+.primary {
+  color: #fcae00;
+}
+
+.secondary {
+  color: #5853bc;
+}
+
+.terciary {
+  color: #11afaf;
+}
+
+.info {
+  color: #707070;
+}
+
+.grey-bg {
+  background: #f0f0f0;
+}
+
+.ff-bitter {
+  font-family: Bitter;
+}
+
+.ff-nunito {
+  font-family: Nunito;
+}
+
+.title-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.section1 {
+  background: linear-gradient(106deg, #11afaf 0%, #5853bc 104%);
+}
+
+.btn2 {
+  background-color: #5853bc;
+  border-radius: 30px;
+  border: none;
+}
+
+.section8 {
+  background: linear-gradient(95deg, #11afaf -1%, #5853bc 107%);
+}
+
+.image {
+  width: 100%;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.box4 {
+  border-radius: 10px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  border: solid 1px #665eff;
+}
+
+.circle {
+  border: solid 1px #707070;
+  background-color: #11afaf;
+}
+
+.box5 {
+  border-radius: 10px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  border: solid 1px #d2d2d2;
+  background-color: #fff;
+}
+
+.box6 {
+  border-radius: 10px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  border: solid 1px #d2d2d2;
+}
+
+.btn6 {
+  border-radius: 50px;
+  border: none;
+  background-color: #fcae00;
+}
+
+.box7 {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  border: solid 1px #d2d2d2;
+  background-color: white;
+}
+
+.support-img {
+  width: 100%;
+}
+
+.popup-img {
+  width: 13%;
+}
+
+/*# sourceMappingURL=output.css.map */
