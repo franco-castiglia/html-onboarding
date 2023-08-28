@@ -8,6 +8,16 @@ $skyblue: #11afaf;
 $subtitle-font: Bitter;
 $text-font: Nunito;
 
+@mixin local {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 375px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  border: solid 1px #d2d2d2;
+}
+
 @mixin localB {
   display: flex;
   flex-direction: column;
@@ -459,6 +469,14 @@ body {
 
     .local {
 
+      .localA {
+
+        .logo-phone {
+          display: none;
+        }
+      }
+
+
       .localB {
         @include localB;
       }
@@ -713,16 +731,32 @@ body {
       height: 120%;
 
       .local {
+        @include local;
+        height: 100%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+
+        .localA {
+
+          .logo-phone {
+            display: block;
+            padding: 20px 10px;
+            width: 80%;
+            height: 80%;
+          }
+        }
 
         .localB {
           width: 80%;
           height: 10%;
           margin-top: 30px;
+          border: none;
+          box-shadow: none;
+          align-items: flex-start;
+
 
           .logos {
-            width: 22%;
-            height: 22%;
-            padding: 30px 0 20px;
+            display: none;
           }
 
           .local-subtitle {
@@ -734,7 +768,7 @@ body {
           }
 
           .local-button {
-            width: 40%;
+            width: 65%;
             height: 10%;
             font-size: 16px;
             margin-bottom: 20px;
