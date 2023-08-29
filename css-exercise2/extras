@@ -1,0 +1,97 @@
+<!-- PC SECTION 4 -->
+
+<div class="row pt-4 pb-4">
+        <div class="col-6">
+          <img class="image" src="img/donacion.png" alt="Foto de donación" />
+        </div>
+        <div class="col-6">
+          <h3 class="primary ff-bitter fw-bold">
+            Por cada voucher vendido
+          </h3>
+          <h2 class="secondary ff-bitter fw-bold">FNC donará 1 vianda</h2>
+          <h3 class="primary ff-bitter fw-bold">
+            a instituciones seleccionadas.
+          </h3>
+          <p class="info ff-nunito text-justify">
+            Nos importa la salud y el impacto socio económico en la comunidad.
+            El propósito de este proyecto es darnos aliento, que codo con codo
+            salimos adelante.
+          </p>
+          <button class="text-white ff-nunito fw-bold btn2 mb-4">leer más</button>
+        </div>
+
+      </div>
+
+
+<!-- CAJAS COMO FUNCIONA -->
+
+      <div class="row justify-content-evenly pb-4">
+        <div class="col-3 box5">
+          <div class="circle mt-4 mb-4 text-white ff-nunito fw-bold">1</div>
+          <h6 class="info ff-nunito fw-bold pb-3">Elegí la forma que deseas colaborar.</h6>
+        </div>
+        <div class="col-3 box5">
+          <div class="circle mt-4 mb-4 text-white ff-nunito fw-bold">2</div>
+          <h6 class="info ff-nunito fw-bold pb-3">Completá los datos para finalizar la compra.</h6>
+        </div>
+        <div class="col-3 box5">
+          <div class="circle mt-4 mb-4 text-white ff-nunito fw-bold">3</div>
+          <h6 class="info ff-nunito fw-bold pb-3">Visitá el local una vez abierto y disfrutá!</h6>
+        </div>
+      </div>
+
+
+
+<!-- LOCALES COMPU  -->
+
+<div class="row justify-content-evenly mt-4">
+  <div class="col-2 box-local">
+    <img src="img/boxes.png" alt="Boxes Fábrica de Churros" class="py-4 logos"/>
+    <h6 class="info ff-nunito fw-bold">Boxes Fabrica de Churros</h6>
+    <p class="info ff-nunito fw-bold">Chaná 2120</p>
+    <button class="text-white ff-nunito fw-bold mb-4 btn-local">ver detalle</button>
+  </div>
+  <div class="col-2 box-local">
+    <img src="img/crepas.png" alt="Crepas" class="py-4 logos"/>
+    <h6 class="info ff-nunito fw-bold">Crepas</h6>
+    <p class="info ff-nunito fw-bold">Arocena 1556</p>
+    <button class="text-white ff-nunito fw-bold mb-4 btn-local">ver detalle</button>
+  </div>
+  <div class="col-2 box-local">
+    <img src="img/crunch.png" alt="Crunch Cereal House" class="py-4 logos"/>
+    <h6 class="info ff-nunito fw-bold">Crunch Cereal House</h6>
+    <p class="info ff-nunito fw-bold">Mercado Williman</p>
+    <button class="text-white ff-nunito fw-bold mb-4 btn-local">ver detalle</button>
+  </div>
+  <div class="col-2 box-local">
+    <img src="img/francis.png" alt="Francis" class="py-4 logos"/>
+    <h6 class="info ff-nunito fw-bold">Francis</h6>
+    <p class="info ff-nunito fw-bold">Luis de la Torre 502</p>
+    <button class="text-white ff-nunito fw-bold mb-4 btn-local">ver detalle</button>
+  </div>
+</div>
+<div class="row justify-content-evenly mt-4">
+  <div class="col-2 box-local">
+    <img src="img/pedro.png" alt="La Cocina de Pedro" class="py-4 logos"/>
+    <h6 class="info ff-nunito fw-bold">La Cocina de Pedro</h6>
+    <p class="info ff-nunito fw-bold">Av. Gonzalo Ramírez 1483</p>
+    <button class="text-white ff-nunito fw-bold mb-4 btn-local">ver detalle</button>
+  </div>
+  <div class="col-2 box-local">
+    <img src="img/mango.png" alt="Mango Vegan Food" class="py-4 logos"/>
+    <h6 class="info ff-nunito fw-bold">Mango Vegan Food</h6>
+    <p class="info ff-nunito fw-bold">Alzáibar 1321</p>
+    <button class="text-white ff-nunito fw-bold mb-4 btn-local">ver detalle</button>
+  </div>
+  <div class="col-2 box-local">
+    <img src="img/crunch.png" alt="Crunch Cereal House" class="py-4 logos"/>
+    <h6 class="info ff-nunito fw-bold">Crunch Cereal House</h6>
+    <p class="info ff-nunito fw-bold">Mercado Williman</p>
+    <button class="text-white ff-nunito fw-bold mb-4 btn-local">ver detalle</button>
+  </div>
+  <div class="col-2 box-local">
+    <img src="img/francis.png" alt="Francis" class="py-4 logos"/>
+    <h6 class="info ff-nunito fw-bold">Francis</h6>
+    <p class="info ff-nunito fw-bold">Luis de la Torre 502</p>
+    <button class="text-white ff-nunito fw-bold mb-4 btn-local">ver detalle</button>
+  </div>
