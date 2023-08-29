@@ -124,6 +124,7 @@ body {
   padding: 6px 100px;
   text-align: center;
   border: none;
+  cursor: pointer;
 }
 
 .section3 {
@@ -145,6 +146,9 @@ body {
 }
 .section3 .text .other-color {
   font-weight: bold;
+}
+.section3 .text .phone-only {
+  display: none;
 }
 .section3 .text-bold {
   color: #707070;
@@ -193,6 +197,7 @@ body {
   border: solid 1px #665eff;
   width: 45%;
   height: 305px;
+  cursor: pointer;
 }
 .section4 .boxes4 .box4 .box4-title {
   color: #fcae00;
@@ -327,6 +332,7 @@ body {
   font-size: 21px;
   font-weight: bold;
   color: #ffffff;
+  cursor: pointer;
 }
 .section6 .subtitle {
   font-size: 32px;
@@ -351,6 +357,7 @@ body {
   border-radius: 50px;
   border: solid 1px #d2d2d2;
   text-indent: 20px;
+  cursor: pointer;
 }
 .section6 .custom {
   position: relative;
@@ -410,6 +417,7 @@ body {
   font-size: 21px;
   font-weight: bold;
   color: #ffffff;
+  cursor: pointer;
 }
 .section6 .locals2 {
   display: flex;
@@ -457,6 +465,7 @@ body {
   font-size: 21px;
   font-weight: bold;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .section7 {
@@ -574,14 +583,23 @@ body {
     display: none;
   }
   .section3 .title {
-    font-size: 21px;
+    white-space: nowrap;
+    font-size: 19px;
   }
   .section3 .text {
     font-size: 16px;
+    margin-bottom: 0;
+  }
+  .section3 .text .phone-only {
+    display: inline;
+    font-weight: bold;
   }
   .section3 .text-bold {
     font-size: 16px;
     padding: 0;
+  }
+  .section3 .pc-only {
+    display: none;
   }
   .section4 {
     display: none;
@@ -594,9 +612,11 @@ body {
   }
   .section5 .boxes5 {
     flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
   }
   .section5 .boxes5 .box5 {
-    width: 120%;
+    width: 80%;
     margin-bottom: 50px;
   }
   .section5 .boxes5 .box5 .circle {
@@ -708,7 +728,7 @@ body {
     font-size: 21px;
   }
   .section7 .boxes7 {
-    padding: 25px 10px 50px;
+    padding: 25px 15px 50px;
   }
   .section7 .boxes7 .box7 {
     width: 29%;
