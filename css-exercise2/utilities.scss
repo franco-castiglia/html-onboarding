@@ -1,0 +1,28 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/variables-dark";
+@import "node_modules/bootstrap/scss/maps";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/utilities";
+
+
+$utilities: map-merge(
+  $utilities,
+  (
+    'font-size':
+        map-merge(
+          map-get($utilities, 'font-size'),
+          (
+            values:
+              map-merge(
+                map-get(map-get($utilities, 'font-size'), 'values'),
+                (
+                  7: 50px,
+                  8: 60px,
+                )
+              ),
+            responsive: true,
+          )
+        )
+  )
+)
