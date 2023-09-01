@@ -1,17 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Nunito:wght@400;600;700;800;900&display=swap");
 
-@import 'utilities';
+@import "utilities";
 
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
-.primary { color: #fcae00; }
-.secondary { color: #5853bc;}
-.terciary { color: #11afaf; }
-.info { color: #707070;}
-.grey-bg {background: #f0f0f0}
+.primary {
+  color: #fcae00;
+}
+.secondary {
+  color: #5853bc;
+}
+.terciary {
+  color: #11afaf;
+}
+.info {
+  color: #707070;
+}
+.grey-bg {
+  background: #f0f0f0;
+}
 
-.ff-bitter { font-family: Bitter; }
-.ff-nunito { font-family: Nunito; }
+.ff-bitter {
+  font-family: Bitter;
+}
+.ff-nunito {
+  font-family: Nunito;
+}
 
 .custom {
   padding: 0 30px !important;
@@ -98,7 +112,6 @@
     width: 40%;
   }
 
-
   .select6 {
     width: 75%;
     border-radius: 50px;
@@ -136,8 +149,6 @@
   }
 }
 
-
-
 .section7 {
   .box7 {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -156,11 +167,9 @@
   .popup-img {
     width: 36%;
   }
-
 }
 
 @media screen and (min-width: 768px) {
-
   .section5 {
     .box5 {
       width: 30%;
@@ -175,7 +184,6 @@
 }
 
 @media screen and (min-width: 992px) {
-
   .hide-phone {
     display: block;
   }
@@ -203,9 +211,9 @@
       width: 25%;
       background-color: #fcae00;
     }
-    .box-local {
-      width: 21%;
-    }
+    // .box-local {
+    //   width: 21%;
+    // }
   }
 
   .section8 {
